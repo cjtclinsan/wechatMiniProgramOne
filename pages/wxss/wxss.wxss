@@ -1,0 +1,4 @@
+/* pages/wxss/wxss.wxss */
+.box {
+  color: orange
+}

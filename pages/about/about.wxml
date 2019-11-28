@@ -1,2 +1,20 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574938408722&di=23f986f281251144067f9226f8ee9bfb&imgtype=jpg&src=http%3A%2F%2Fmy.qqkuyou.com%2Fimg_jianbihua%2F72651590.jpeg"></image>
+
+<!--补充:相册中的图片-->
+<button bindtap="handleChoosePhoto">选择图片</button>
+<image src="{{iamgePath}}"></image>
+
+<!--监听图片加载完成--><!--lazy-load  懒加载-->
+<view>-------------------------------------------------</view>
+<image wx:for="{{1}}" 
+       src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574938407807&di=f8d24a9703cc37e0827305b6d434cebd&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F66b30882b1c9e5fbc10b2b01f5575e174ab24f2c34a0-wGe3nT_fw658"
+       bindload="handleBindLoad" lazy-load></image>
+
+<!--show-menu-by-longpress  长按图片识别小程序-->
+<image show-menu-by-longpress
+       src="../../asset/image/11.jpg" ></image>
+
+<!-- 图片缩放 -->
+<image src="/asset/image/22.jpg" mode="widthFix"></image>
+
+

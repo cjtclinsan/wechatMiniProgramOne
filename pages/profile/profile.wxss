@@ -1,1 +1,32 @@
 /* pages/profile/profile.wxss */
+.pressed{
+  background: blueviolet;
+  color: white
+}
+
+.box {
+  background: red
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  background: burlywood
+}
+
+.hover-view {
+  background: orange;
+  color: white;
+  font-size: 20px
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: violet;
+  margin-top: 20px
+}
+
+.hover-view-2 {
+  background: green
+}

@@ -1,2 +1,52 @@
-<!--pages/profile/profile.wxml-->
-<text>pages/profile/profile.wxml</text>
+<text>Hello world\n</text>
+<text>小程序\n</text>
+
+<text selectable="{{true}}">Hello tcc\n</text>
+<text selectable>hello txxxx</text>
+
+<text>Hello world\n</text>
+<!--英文空格大小-->
+<text space='nbsp'>Hello world\n</text>
+<!--中文空格大小-->
+<text space='emsp'>Hello world\n</text>
+<!--半个中文空格-->
+<text space='ensp'>Hello world\n</text>
+
+<!--decode属性：是否解码文本-->
+<text decode>5 &gt; 3</text>
+
+<button>按钮</button>
+<!--size属性-->
+<button size="mini" type="primary">按钮</button>
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+<!--镂空效果-->
+<button size="mini" plain>按钮</button>
+<!--不可用-->
+<button size="mini" disabled>按钮</button>
+<!--loading-->
+<button size="mini" loading="{{loading}}">按钮</button>
+<!--hover-class-->
+<button size="mini" hover-class='pressed'>按钮</button>
+
+<!--view组件-->
+<view class="box">
+  吼吼吼
+</view>
+<view>
+  呕呕呕
+</view>
+<!--hover-class-->
+<view class="box1" hover-class="hover-view" hover-start-time="{{1000}}" hover-stay-time="{{1000}}">
+  hover-class
+</view>
+
+<view class="box2" hover-class="hover-view-2">
+  <view class="box1" 
+        hover-class="hover-view" 
+        hover-start-time="{{1000}}" 
+        hover-stay-time="{{1000}}"
+        hover-stop-propagation>
+    hover-class
+  </view>
+</view>

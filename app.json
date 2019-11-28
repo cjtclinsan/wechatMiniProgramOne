@@ -5,7 +5,8 @@
     "pages/profiles/profile",
     "pages/category/category",
     "pages/cart/cart",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/wxss/wxss"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",

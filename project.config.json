@@ -58,6 +58,34 @@
 					"id": -1,
 					"name": "分类页面",
 					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/profile/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "image调试",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "input调试",
+					"pathName": "pages/profiles/profile",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "样式",
+					"pathName": "pages/wxss/wxss",
 					"scene": null
 				}
 			]
