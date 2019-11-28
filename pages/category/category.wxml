@@ -1,0 +1,6 @@
+<!--pages/category/category.wxml-->
+<view>课程页面</view>
+<view wx:for="{{resultList}}" bindtap='handleClick("{{item.courseId}}")'>
+{{item.courseName}}
+</view>
+

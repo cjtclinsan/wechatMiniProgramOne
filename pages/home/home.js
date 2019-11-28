@@ -1,66 +1,45 @@
 // pages/home/home.js
+//获取A怕产生的示例对象
+const app = getApp()
+
+const name = app.globalData.name;
+const age = app.globalData.age;
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    name: 'zhangsan',
+    age: 12,
+    students: [
+      {id: '01', name:'kobe', age:30},
+      {id: '02', name:'james', age:25},
+      {id: '03', name:'yaoming', age: 35}
+    ],
+    counter:0
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleBtnAdd() {
+    //this.data.counter += 1
+    this.setData({
+      counter:this.data.counter + 1
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleBtnSub() {
+    //this.data.counter += 1
+    if( this.data.counter > 0 ){
+      this.setData({
+        counter: this.data.counter - 1
+      })
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  handleGetUserInfo(event){
+    //console.log(event)
   }
 })
+
+//编程范式：
+//1.命令式编程
+//2.声明式编程   Vue/React/Angluar

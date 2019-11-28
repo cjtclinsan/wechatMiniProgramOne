@@ -1,6 +1,48 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/profiles/profile",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ff5777",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "orange",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "asset/tabbar/home.png",
+        "selectedIconPath": "asset/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "课程",
+        "iconPath": "asset/tabbar/category.png",
+        "selectedIconPath": "asset/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "asset/tabbar/cart.png",
+        "selectedIconPath": "asset/tabbar/cart_active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "asset/tabbar/profile.png",
+        "selectedIconPath": "asset/tabbar/profile_active.png"
+      }
+    ],
+    "selectedColor": "#ff5777"
+  },
+  "sitemapLocation": "sitemap32.json"
 }
