@@ -1,0 +1,7 @@
+@import './style/weui.wxss';
+@import './style/widget/weui-button/weui-button.wxss';
+
+.container {
+  color: blueviolet;
+  font-size: 30px;
+}

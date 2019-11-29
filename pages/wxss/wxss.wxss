@@ -1,4 +1,7 @@
 /* pages/wxss/wxss.wxss */
-.box {
-  color: orange
+@import './style/box.wxss';
+@import './style/content.wxss';
+
+.active {
+  color: red
 }

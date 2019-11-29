@@ -1,0 +1,4 @@
+<template name="templateText">
+  <button size="mini">{{btnText}}</button>
+  <text style="color:red">{{textValue}}</text>
+</template>

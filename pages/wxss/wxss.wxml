@@ -1,19 +1,94 @@
 <!--行内样式-->
-<view style='color:red'>哈哈哈</view>
+<!-- <view style='color:red'>行内样式</view> -->
 
 <!--页内样式-->
-<view class='box'>呵呵呵</view>
-
+<!-- <view class='box'>页内样式</view> -->
 
 <!--全局样式-->
+<!-- <view class="container">全局样式</view> -->
+
+<!--三种样式 优先级-->
+<!-- <view style="background:red" class="content">三种样式</view> -->
+
+<!--行内样式 > 页内样式 > 全局样式-->
+
+<!--rpx-->
+<!-- <view class="box1">{{firstName}} {{lastName}}</view> -->
+<!-- <view>------------------------</view> -->
+<!-- <view class="box2"></view> -->
+
+<!--计时-->
+<!-- <button class="btn">{{nowTime}}</button> -->
+
+<!-- <button size="mini" bindtap="handleSwitchColor">切换颜色</button> -->
+<!-- <view class='box {{isActive ? "active":""}}'>可变颜色</view> -->
+
+<!--地图-->
+<!--<map class="map" longitude="116.11" latitude="39.6"></map>-->
+
+<!-- <view>--------条件判断---------</view> -->
+<!-- <button size="mini" bindtap="handleSwitchShow">{{isShow? '隐藏':'显示'}}</button> -->
+<!-- <view wx:if="{{isShow}}">内容显示</view> -->
+
+<!--if else-->
+<!-- <view wx:if="{{score >= 90}}">优秀</view> -->
+<!-- <view wx:elif="{{score >= 80}}">良好</view> -->
+<!-- <view wx:elif="{{score >= 60}}">及格</view> -->
+<!-- <view wx:else>不及格</view> -->
+
+<!-- <button size="mini" bindtap="handleIncrement">成绩+5分</button> -->
+
+<!--hidden  组件还存在：适合显示隐藏切换比较频繁的场景-->
+<!-- <view hidden="{{false}}">==hidden隐藏内容==</view> -->
+<!--组件不存在：适合显示隐藏切换非常低的场景-->
+<!-- <view wx:if="{{false}}">==wx:if控制显示==</view> -->
+
+<!-- <view>-----列表渲染------</view> -->
+<!--wx:for-->
+<!-- <view wx:for="{{['z','x','c']}}">{{item}}  {{index}}</view>
+<view wx:for="tc">{{item}}  {{index}}</view>
+<view wx:for="{{9}}">{{item}}  {{index}}</view> -->
+
+<!--block-->
+<!-- <block wx:if="{{isShow}}">
+<button>按钮</button>
+<view>view</view>
+<text>text</text>
+</block>
+
+<block wx:for="{{2}}">
+<button>按钮</button>
+<view>view</view>
+<text>text</text>
+</block> -->
+
+<!--item index  重命名-->
+<!-- <view wx:for="{{movies}}" wx:for-item="movie">{{movie}}</view>
+<view wx:for="{{movies}}" wx:for-index="i">{{i}}</view> -->
+
+<!--二维数组-->
+<!-- <block wx:for="{{nums}}" wx:for-item="innerItem">
+  <block wx:for="{{innerItem}}">
+    <view>{{item}}</view>
+  </block>
+</block> -->
+
+<!--key-->
+<view class="container">
+  <view wx:for="{{letters}}" wx:key>
+    {{item}}
+  </view>
+</view>
+
+<view>------template-----</view>
+<!--在使用前，是没有任何渲染的-->
 
 
+<import src="./template.wxml" />
 
-
-
-
-
-
+<template is="templateText" data="{{textValue:'text1', btnText:'模板按钮1'}}"/>
+<template is="templateText" data="{{textValue:'text2', btnText:'模板按钮2'}}"/>
+<template is="templateText" data="{{textValue:'text3', btnText:'模板按钮3'}}"/>
 
 
 
