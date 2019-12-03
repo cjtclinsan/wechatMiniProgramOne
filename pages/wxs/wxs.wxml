@@ -1,0 +1,28 @@
+<!--wxs定义方法-->
+<!-- <wxs module="info">
+  var message = "Hello world";
+  var name = "tccc";
+
+  var sum = function(num1, num2){
+    return num1 + num2;
+  }
+
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+
+<!--定义在单独的wxs文件中,需要导入,不能使用绝对路径-->
+<wxs src="../wxs/info.wxs" module="info" />
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(20, 30)}}</view>
+
+<!--应用-->
+<wxs src="../wxs/format.wxs" module="format" />
+<view>123</view>
+<view>{{format.priceFormat(price, 2)}}</view>
+
+<view>{{format.dateFormat(timestamp, 2)}}</view>

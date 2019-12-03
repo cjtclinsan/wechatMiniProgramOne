@@ -86,6 +86,28 @@
 					"id": -1,
 					"name": "样式",
 					"pathName": "pages/wxss/wxss",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "语法",
+					"pathName": "pages/wxs/wxs",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "组件",
+					"pathName": "components/w-tab-control/w-tab-control",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -37,6 +37,20 @@ Page({
   },
   handleGetUserInfo(event){
     //console.log(event)
+  },
+
+  handleTabClick(event){
+    console.log(event)
+  },
+
+  handleIncrement(){
+    //修改my-sel组件中的数据
+    //通过id/class获取组件对象
+    const my_sel = this.selectComponent('#sel-id');
+
+    //组件对象.setData：修改组件中的数据
+    my_sel.incrementCounter(10)
+    
   }
 })
 

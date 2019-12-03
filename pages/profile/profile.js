@@ -5,62 +5,62 @@ Page({
    * 页面的初始数据
    */
   data: {
-    loading: false
+    loading: false,
+    titles:[
+      "衣服","鞋子","裤子"
+    ]
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  handleBthClick(){
+    console.log('按钮点击');
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleTouchMove(){
+    console.log('handleTouchMove');
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  handleTouchStart(){
+    console.log('handleTouchStart');
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  handleTouchEnd(){
+    console.log('handleTouchEnd');
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  handleTap(){
+    console.log('handleTap');
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  handleLongPress(){
+    console.log('handleLongPress');
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  handleEventClick(e){
+    console.log('-------------', e);
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  handleItemClick(event){
+    console.log(event.currentTarget.dataset.item);
+  },
 
-  }
+  //------事件冒泡   事件捕获--------
+  handleCaptureView1(){
+    console.log("冒泡1");
+  },
+  handleCaptureView2() {
+    console.log("冒泡2");
+  },
+  handleCaptureView3() {
+    console.log("冒泡3");
+  },
+
+  handleBindView1() {
+    console.log("捕获1");
+  },
+  handleBindView2() {
+    console.log("捕获2");
+  },
+  handleBindView3() {
+    console.log("捕获3");
+  },
 })

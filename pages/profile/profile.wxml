@@ -1,16 +1,16 @@
 <text>Hello world\n</text>
-<text>小程序\n</text>
+<text class="title">小程序\n</text>
 
 <text selectable="{{true}}">Hello tcc\n</text>
 <text selectable>hello txxxx</text>
 
 <text>Hello world\n</text>
 <!--英文空格大小-->
-<text space='nbsp'>Hello world\n</text>
+<!-- <text space='nbsp'>Hello world\n</text> -->
 <!--中文空格大小-->
-<text space='emsp'>Hello world\n</text>
+<!-- <text space='emsp'>Hello world\n</text> -->
 <!--半个中文空格-->
-<text space='ensp'>Hello world\n</text>
+<!-- <text space='ensp'>Hello world\n</text> -->
 
 <!--decode属性：是否解码文本-->
 <text decode>5 &gt; 3</text>
@@ -37,7 +37,7 @@
   呕呕呕
 </view>
 <!--hover-class-->
-<view class="box1" hover-class="hover-view" hover-start-time="{{1000}}" hover-stay-time="{{1000}}">
+<!-- <view class="box1" hover-class="hover-view" hover-start-time="{{1000}}" hover-stay-time="{{1000}}">
   hover-class
 </view>
 
@@ -49,4 +49,61 @@
         hover-stop-propagation>
     hover-class
   </view>
+</view> -->
+
+<!--事件处理-->
+<button bindtap="handleBthClick" size="mini">按钮</button>
+<button bind:tap="handleBthClick" size="mini">按钮</button>
+
+<!--常见事件-->
+<view class=".box2" bind:touchmove="handleTouchMove"
+                   bind:touchstrat="handleTouchStart"
+                   bind:touchend="handleTouchEnd"
+                   bind:tap="handleTap"
+                   bindlongtap="handleLongPress">
 </view>
+
+<!--事件对象-->
+<button size="mini" bindtap="handleEventClick">按钮</button>
+
+<!--事件的传递参数-->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="item" bindtap='handleItemClick' 
+                       data-index="{{index}}"
+                       data-item="{{item}}">
+      {{item}}
+    </view>
+  </block>
+</view>
+
+<!--事件冒泡   事件捕获-->
+<!--bing 一层层传递-->
+<!--catch 阻止事件进一步传递-->
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleBindView1">
+  <view class="view2" capture-bind:tap="handleCaptureView2" catchtap="handleBindView2">
+    <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleBindView3">
+    
+    </view>
+  </view>
+</view>
+
+
+<!--使用自定义组件-->
+<my-cpn></my-cpn>
+
+<my-style />
+
+
+
+
+
+
+
+
+
+
+
+
+
+

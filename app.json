@@ -6,7 +6,8 @@
     "pages/category/category",
     "pages/cart/cart",
     "pages/profile/profile",
-    "pages/wxss/wxss"
+    "pages/wxss/wxss",
+    "pages/wxs/wxs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ff5777",

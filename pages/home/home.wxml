@@ -19,3 +19,47 @@
 </button>
 <open-data type='userNickName'></open-data>
 <open-data type='userAvatarUrl'></open-data>
+
+<!--组件-->
+<w-tab-control titles="{{['衣服','裤子','鞋子']}}" 
+               bind:itemClick="handleTabClick"/>
+
+<my-sel id="sel-id" class="sel-class"/>
+<button size="mini" bindtap="handleIncrement">修改组件内的数据</button>
+
+<view>--------===-----单个插条----===--------</view>
+<my-slot>
+  <button size="mini">按钮</button>
+</my-slot>
+
+<my-slot>
+  <text>按钮</text>
+</my-slot>
+
+<my-slot>
+  <image src="http://i1.sinaimg.cn/ent/d/2008-06-04/U105P28T3D2048907F326DT20080604225106.jpg"></image>
+</my-slot>
+
+<my-slot>
+  <slider value="30"></slider>
+</my-slot>
+
+<!---多个插条--->
+<my-mslot>
+  <button size="mini" slot="slot2">按钮222</button>
+  <slider slot="slot1"></slider>
+  <text slot="slot3">234</text>
+</my-mslot>
+
+
+
+
+
+
+
+
+
+
+
+
+

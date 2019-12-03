@@ -1,5 +1,7 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText": "课程页面",
+  "usingComponents": {
+    "w-tab-control": "/components/my-cpn/my-cpn"
+  },
+  "navigationBarTitleText": "商品页面",
   "enablePullDownRefresh": true
 }

@@ -1,6 +1,5 @@
-<!--pages/category/category.wxml-->
-<view>课程页面</view>
-<view wx:for="{{resultList}}" bindtap='handleClick("{{item.courseId}}")'>
-{{item.courseName}}
+<view class="tab-control">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+    <view class="tab-item">{{item}}</view>
+  </block>
 </view>
-
